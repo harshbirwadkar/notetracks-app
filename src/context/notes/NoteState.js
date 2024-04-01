@@ -6,7 +6,6 @@ const NoteState = (props)=> {
   const context = useContext(alertContext)
   const{ProvokeAlert} = context
   const noteInitialised = []
-  // const host = "http://localhost:5000/"
   const host = process.env.REACT_APP_BASE_URL_NOTETRACK
   const [notes, setNotes] = useState(noteInitialised);
 
@@ -37,7 +36,6 @@ const NoteState = (props)=> {
     });
     let resjsonNote = await response.json()  // parses JSON response into native JavaScript objects
     //  getallNotes()
-    console.log(resjsonNote)
     setNotes(notes.concat(resjsonNote))
     ProvokeAlert("success" , "Successfully added the note" )
   }

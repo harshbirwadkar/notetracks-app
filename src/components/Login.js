@@ -5,9 +5,7 @@ import alertContext from '../context/alert/alertContext'
 const Login = () => {
     const context = useContext(alertContext)
     const { ProvokeAlert } = context
-    // const host = "http://localhost:5000/"
     const host = process.env.REACT_APP_BASE_URL_NOTETRACK
-    console.log( "env var : " + process.env.REACT_APP_BASE_URL_NOTETRACK)
     const [credentials, setCredentials] = useState({ email: "", password: "" })
     let navigate = useNavigate()
 
