@@ -35,7 +35,7 @@ const Login = () => {
             <form onSubmit={handleSubmit}>
                 <div className="container my-2 shadow p-3 mb-5" style={{ maxWidth: "460px", minHeight: '370px', borderRadius: "35px" }}>
                     <div className="container" style={{width : "90%"}}>
-                        <h2 className="d-flex justify-content-center" style={{ minWidth: "345px", fontSize: "30px", marginTop: "5px", marginBottom: "30px", color: "#000000" }}>Login</h2>
+                        <h2 className="d-flex justify-content-center" style={{ maxWidth: "345px", fontSize: "30px", marginTop: "5px", marginBottom: "30px", color: "#000000" }}>Login</h2>
                         <div className="mb-4">
                             <label htmlFor="exampleInputEmail1" className="d-flex form-label" style={{ margin: "0 0 0 5px", color: "#596172" }}>Email address</label>
                             <input style={{ borderRadius: "15px", height: "44px", backgroundColor: "#f2f2f2" }} type="email" className="form-control" id="email" name='email' aria-describedby="emailHelp" onChange={handleChange} value={credentials.email} required />
